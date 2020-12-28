@@ -305,7 +305,7 @@ li {
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
   left: 0;
-  top: 0;
+  bottom: 0;
 }
 
 .services-list-item:nth-child(1)::before {
