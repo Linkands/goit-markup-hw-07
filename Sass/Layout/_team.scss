@@ -68,6 +68,10 @@
     margin-right: 30px;
 }
 
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
 .team-list-item-name {
     font-style: normal;
     font-weight: 500;
