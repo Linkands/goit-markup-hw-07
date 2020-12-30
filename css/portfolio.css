@@ -71,6 +71,12 @@ li {
   display: flex;
 }
 
+.navigation-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -79,7 +85,7 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,143;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
   padding: 32px 0 32px 0;
@@ -138,7 +144,7 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,143;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--text-color);
   padding: 32px 0;
@@ -156,7 +162,7 @@ li {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1,91;
+  line-height: 1.91;
   /* identical to box height */
   letter-spacing: 0.03em;
   margin-right: 93px;
