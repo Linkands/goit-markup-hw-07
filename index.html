@@ -16,7 +16,15 @@
     <header class="navigation">
         <div class="container">
             <nav class="navigation-site">
-                <p class="navigation-logo"><a href="./index.html"><span class="navigation-logo-blue">Web</span><span class="navigation-logo-black">Studio</span></a></p>
+                    <p class="navigation-logo"><a href="./index.html"><span class="navigation-logo-blue">Web</span><span class="navigation-logo-black">Studio</span></a></p>
+                    <button type="button" class="navigation-button is-open" aria-expanded="false" aria-controls="contact-container" data-menu-button>
+                        <svg class="navigation-button-icon" width="40" height="40" aria-label="mobile menu button">
+                            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+            </nav>
+            <address class="contact-container" id="contact-container" data-menu>
                 <ul class="navigation-list">
                     <li class="navigation-list-item">
                         <a class="navigation-list-ref current-page" href="./index.html">Студия</a>
@@ -28,8 +36,7 @@
                         <a class="navigation-list-ref" href="#">Контакты</a>
                     </li>
                 </ul>
-            </nav>
-            <address class="contact">
+
                 <ul class="contact-list">
                     <li class="contact-list-item">
                         <a class="contact-list-ref" href="mailto:info@devstudio.com">
@@ -48,8 +55,8 @@
                 </ul>
             </address>
         </div>
-
     </header>
+
     <main>
 
         <!-----------HERO----------->
@@ -136,7 +143,15 @@
                 <ul class="team-list">
                     <li class="team-list-item">
                         <div class="teamcard">
-                            <img src="./images/team/img.jpg" alt="" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/mobile/1-mobile.jpg 1x, ./images/mobile/1-mobilex2.jpg 2x"
+                                media="(min-width: 480px)">
+                                <source srcset="./images/tab/1-tab.jpg 1x, ./images/tab/1-tabx2.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./images/desktop/1-desktop.jpg 1x, ./images/tab/1-desktopx2.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img class="team-list-picture" src="./images/mobile/1-mobile.jpg" alt="">
+                            </picture>
                             <h3 class="team-list-item-name">Игорь Демьяненко</h3>
                                 <p class="team-list-item-profession" lang="en">Product Designer</p>
                                 <ul class="social-list">
@@ -173,7 +188,15 @@
                     </li>
                     <li class="team-list-item">
                         <div class="teamcard">
-                            <img src="./images/team/img1.jpg" alt="" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/mobile/2-mobile.jpg 1x, ./images/mobile/2-mobilex2.jpg 2x"
+                                media="(min-width: 480px)">
+                                <source srcset="./images/tab/2-tab.jpg 1x, ./images/tab/2-tabx2.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./images/desktop/2-desktop.jpg 1x, ./images/tab/2-desktopx2.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img class="team-list-picture" src="./images/mobile/2-mobile.jpg" alt="">
+                            </picture>
                             <h3 class="team-list-item-name">Ольга Репина</h3>
                             <p class="team-list-item-profession" lang="en">Frontend Developer</p>
                             <ul class="social-list">
@@ -210,7 +233,15 @@
                     </li>
                     <li class="team-list-item">
                         <div class="teamcard">                  
-                            <img src="./images/team/img2.jpg" alt="" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/mobile/3-mobile.jpg 1x, ./images/mobile/3-mobilex2.jpg 2x"
+                                media="(min-width: 480px)">
+                                <source srcset="./images/tab/3-tab.jpg 1x, ./images/tab/3-tabx2.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./images/desktop/3-desktop.jpg 1x, ./images/tab/3-desktopx2.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img class="team-list-picture" src="./images/mobile/3-mobile.jpg" alt="">
+                            </picture>
                             <h3 class="team-list-item-name">Николай Тарасов</h3>
                             <p class="team-list-item-profession" lang="en">Marketing</p>
                             <ul class="social-list">
@@ -247,7 +278,15 @@
                     </li>
                     <li class="team-list-item">
                         <div class="teamcard">
-                            <img src="./images/team/img3.jpg" alt="" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/mobile/4-mobile.jpg 1x, ./images/mobile/4-mobilex2.jpg 2x"
+                                media="(min-width: 480px)">
+                                <source srcset="./images/tab/4-tab.jpg 1x, ./images/tab/4-tabx2.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./images/desktop/4-desktop.jpg 1x, ./images/tab/4-desktopx2.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img class="team-list-picture" src="./images/mobile/4-mobile.jpg" alt="">
+                            </picture>
                             <h3 class="team-list-item-name">Михаил Ермаков</h3>
                             <p class="team-list-item-profession" lang="en">UI Designer</p>
                             <ul class="social-list">
@@ -285,11 +324,11 @@
                 </ul>
             </div>
         </section>
-    </main>
+    
 
     <!-----------CLIENTS----------->
 
-    <section class="clients">
+<section class="clients">
         <div class="container">
             <h2 class="clients-header">Постоянные клиенты</h2>
                 <ul class="clients-list">
@@ -340,6 +379,7 @@
         </div>
     </section>
 
+    </main>
 
 
     <!-----------FOOTER----------->
@@ -347,6 +387,7 @@
     <footer class="page-footer">
         <div class="container">
             <address class="footer-contacts">
+                <div class="footer-container">
                 <div class="footer-wrapper">
                     <p class="footer-logo"><span class="navigation-logo-blue">Web</span><span class="navigation-logo-white">Studio</span></p>
                     <ul>
@@ -394,8 +435,9 @@
                         </li>
                     </ul>
                 </div>
+                </div>
                 <form class="email-form">
-                    <label>
+                    <label class="email-form-wrapper">
                         <p class="email-form-text">Подпишитесь на рассылку</p> 
                         <input type="email" name="email" placeholder="E-mail" class="email-form-input"/>
                     </label>
@@ -416,7 +458,7 @@
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg height="11px" width="11px">
-                    <use href="./images/sprite.svg#icon-close"></use>
+                    <use href="./images/sprite.svg#icon-closee"></use>
                 </svg>
             </button>
             <form class="modal-form">
@@ -465,5 +507,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
